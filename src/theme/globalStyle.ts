@@ -6,9 +6,10 @@ export default createGlobalStyle`
     *{
         margin: 0;
         padding: 0;
-        outline:0;
+        outline: 0;
         box-sizing:border-box;
         font-family: 'Outfit', sans-serif;
+        color: white;
     }
     body {
         background-color: #000235;
