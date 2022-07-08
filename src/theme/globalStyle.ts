@@ -1,17 +1,19 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-   *{
-       margin: 0;
-       padding: 0;
-       outline:0;
-       box-sizing:border-box;
-       font-family: Outfit;
-   }
-   #root{
-       margin:0 auto;
-   }
-   body {
-       background-color: #000235;
-   }
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        outline:0;
+        box-sizing:border-box;
+        font-family: 'Outfit', sans-serif;
+    }
+    #root{
+        margin:0 auto;
+    }
+    body {
+        background-color: #000235;
+    }
 `;
