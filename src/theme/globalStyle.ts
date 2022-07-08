@@ -14,5 +14,6 @@ export default createGlobalStyle`
         background-color: #000235;
         display: flex;
         justify-content: center;
+        overflow-x: hidden;
     }
 `;

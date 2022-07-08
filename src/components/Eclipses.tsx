@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface EclipseProps {
-  width: string;
-  height: string;
+  diameter: string;
   left: string;
   top: string;
   blur: string;
@@ -14,29 +13,34 @@ const Eclipse = styled.div<EclipseProps>`
   position: absolute;
   background-color: #F176E0;
   border-radius: 50%;
-  width: ${(p) => p.width};
-  height: ${(p) => p.height};
-  left: ${(p) => p.left};
-  top: ${(p) => p.top};
-  filter: blur(${(p) => p.blur});
-  opacity:  ${(p) => (p.opacity ? p.opacity : 1)};
+  width: ${(props) => props.diameter};
+  height: ${(props) => props.diameter};
+  left: ${(props) => props.left};
+  top: ${(props) => props.top};
+  filter: blur(${(props) => props.blur});
+  opacity:  ${(props) => (props.opacity ? props.opacity : 1)};
 `;
 
 const Eclipses:React.FC = () => (
   <>
     <Eclipse
-      width="660px"
-      height="662px"
+      diameter="660px"
       left="-343px"
       top="-740px"
       blur="670px"
     />
     <Eclipse
-      width="955px"
-      height="955px"
+      diameter="955px"
       left="319px"
       top="169px"
       blur="169px"
+      opacity={0.5}
+    />
+    <Eclipse
+      diameter="1117px"
+      left="-986px"
+      top="2146px"
+      blur="577px"
       opacity={0.5}
     />
   </>

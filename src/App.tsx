@@ -7,15 +7,14 @@ import Navbar from './components/Navbar';
 const SiteWrapper = styled.div`
  width: 800px;
  position: relative;
- overflow: hidden;
 `;
 
 const App:React.FC = () => (
   <>
     <GlobalStyle />
     <SiteWrapper>
-      <Eclipses />
       <Navbar />
+      <Eclipses />
     </SiteWrapper>
   </>
 );
