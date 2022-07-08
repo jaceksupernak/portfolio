@@ -10,10 +10,9 @@ export default createGlobalStyle`
         box-sizing:border-box;
         font-family: 'Outfit', sans-serif;
     }
-    #root{
-        margin:0 auto;
-    }
     body {
         background-color: #000235;
+        display: flex;
+        justify-content: center;
     }
 `;
