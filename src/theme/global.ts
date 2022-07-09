@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
         outline: 0;
         box-sizing:border-box;
         font-family: 'Outfit', sans-serif;
-        color: white;
+        color: ${({ theme }) => theme.primaryLight};
     }
     body {
         background-color: ${({ theme }) => theme.primaryDark};

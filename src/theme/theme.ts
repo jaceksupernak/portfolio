@@ -7,7 +7,7 @@ const dark = {
   secondaryLight: '#F176E0',
   secondaryLightBrighter: '#FFB6F5',
   screen: {
-    phone: '320px',
+    mobile: '400px',
     tablet: '500px',
     laptop: '800px',
   },

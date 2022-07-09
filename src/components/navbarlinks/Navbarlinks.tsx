@@ -3,8 +3,18 @@ import styled from 'styled-components';
 import Link from '../link/Link';
 
 const NavbarlinksStyled = styled.div`
-  display: flex;
-  gap: 42px;
+  display: none;
+  
+  gap: 20px;
+  
+
+  @media (min-width: ${({ theme }) => theme.screen.tablet}) {
+    display: flex;
+    }
+
+  @media (min-width: ${({ theme }) => theme.screen.laptop}) {
+    gap: 42px;
+  }
 `;
 
 const Navbarlinks:React.FC = () => (
