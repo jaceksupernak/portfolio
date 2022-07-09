@@ -4,7 +4,6 @@ import Link from '../link/Link';
 
 const NavbarlinksStyled = styled.div`
   display: none;
-  
   gap: 20px;
   
 

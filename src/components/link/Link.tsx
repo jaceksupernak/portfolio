@@ -8,6 +8,10 @@ interface LinkProps {
 
 const LinkStyled = styled.a`
     text-decoration: none;
+    transition: color 0.3s linear;
+    &:hover {
+      color: ${({ theme }) => theme.secondaryLight};
+    }
 `;
 
 const Link:React.FC<LinkProps> = ({ text, href }) => (

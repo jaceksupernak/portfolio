@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from '../logo/Logo';
 import Navbarlinks from '../navbarlinks/Navbarlinks';
+import MobileMenu from '../mobilemenu/MobileMenu';
 
 const NavbarStyled = styled.nav`
   display: flex;
@@ -19,6 +20,7 @@ const Navbar:React.FC = () => (
   <NavbarStyled>
     <Logo />
     <Navbarlinks />
+    <MobileMenu />
   </NavbarStyled>
 );
 

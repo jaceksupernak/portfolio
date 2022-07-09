@@ -19,6 +19,7 @@ const Eclipse = styled.div<EclipseProps>`
   top: ${(props) => props.top};
   filter: blur(${(props) => props.blur});
   opacity:  ${(props) => (props.opacity ? props.opacity : 1)};
+  z-index: 1;
 `;
 
 const Eclipses:React.FC = () => (
@@ -26,14 +27,14 @@ const Eclipses:React.FC = () => (
     <Eclipse
       diameter="660px"
       left="-343px"
-      top="-740px"
+      top="-720px"
       blur="670px"
     />
     <Eclipse
       diameter="955px"
-      left="319px"
+      left="40%"
       top="169px"
-      blur="169px"
+      blur="477px"
       opacity={0.5}
     />
     <Eclipse
