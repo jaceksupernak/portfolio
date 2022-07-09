@@ -11,7 +11,7 @@ interface EclipseProps {
 
 const Eclipse = styled.div<EclipseProps>`
   position: absolute;
-  background-color: #F176E0;
+  background-color: ${({ theme }) => theme.secondaryLight};
   border-radius: 50%;
   width: ${(props) => props.diameter};
   height: ${(props) => props.diameter};

@@ -1,3 +1,4 @@
+// define the dark theme which is the current default
 const dark = {
   primaryDark: '#000235',
   primaryDarkBleaker: '#515586',
@@ -12,7 +13,10 @@ const dark = {
   },
 };
 
+// set the default theme to dark
+const theme = dark;
+
+// the type definition for the dark type object
 export type ThemeType = typeof dark;
 
-const theme = dark;
 export default theme;
