@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const HamburgerStyled = styled.button`
+interface HamburgerStyledProps {
+  isOpen: boolean;
+}
+
+export const HamburgerStyled = styled.button<HamburgerStyledProps>`
   position: absolute;
   top: 0.6rem;
   right: 1rem;
@@ -22,19 +26,28 @@ export const HamburgerStyled = styled.button`
   
   div {
     width: 2rem;
-    height: 0.2rem;
+    height: 0.1rem;
     // 0.2 -> 0.1
-    background: ${({ theme }) => theme.primaryDark};
+    background: ${({ theme }) => theme.primaryLight};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
   }
 
+  @media (min-width: ${({ theme }) => theme.screen.tablet}) {
+    display: none;
+  }
+
 `;
 
-const Hamburger = () => (
-  <HamburgerStyled>
+interface HamburgerProps {
+  isOpen: boolean;
+  onHamburgerClick: () => void;
+}
+
+const Hamburger:React.FC<HamburgerProps> = ({ isOpen, onHamburgerClick }) => (
+  <HamburgerStyled isOpen={isOpen} onClick={onHamburgerClick}>
     <div />
     <div />
     <div />

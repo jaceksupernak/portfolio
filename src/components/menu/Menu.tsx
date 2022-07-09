@@ -2,7 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from '../link/Link';
 
-const MenuStyled = styled.div`
+interface MenuStyledProps {
+    isOpen: boolean;
+}
+
+const MenuStyled = styled.div<MenuStyledProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,34 +14,38 @@ const MenuStyled = styled.div`
   height: 100vh;
   text-align: center;
   text-transform: uppercase;
-  padding: 2rem;
-  position: absolute;
+  position: fixed;
   font-weight: bold;
   top: 0;
   right: 0;
+  width: 100%;
   transition: transform 0.3s ease-in-out;
   z-index: 2;
+  transform: translateX(100%);
   
-  @media (max-width: ${({ theme }) => theme.screen.mobile}) {
-    width: 100%;
+  @media (min-width: ${({ theme }) => theme.screen.mobile}) {
+    max-width: 320px;;
   }
 
   a {
     font-size: 2rem;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     letter-spacing: 0.2rem;
     color: ${({ theme }) => theme.primaryDark};
   }
     
 `;
 
-const Menu:React.FC = () => (
-  <MenuStyled>
+interface MenuProps {
+    isOpen: boolean;
+}
+
+const Menu:React.FC<MenuProps> = ({ isOpen }) => (
+  <MenuStyled isOpen={isOpen}>
     <Link text="experience" href="asd" />
     <Link text="projects" href="asd" />
     <Link text="get in touch" href="asd" />
     <Link text="cv" href="asd" />
-
   </MenuStyled>
 );
 
