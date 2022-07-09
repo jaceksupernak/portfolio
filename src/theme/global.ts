@@ -13,8 +13,11 @@ export default createGlobalStyle`
     }
     body {
         background-color: #000235;
+        overflow-x: hidden;
+    }
+    #root {
+        width: 100%;
         display: flex;
         justify-content: center;
-        overflow-x: hidden;
     }
 `;
