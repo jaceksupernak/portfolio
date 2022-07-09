@@ -4,7 +4,6 @@ import Menu from '../menu/Menu';
 
 const MobileMenu:React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const onHamburgerClickHandler = () => setIsOpen(!isOpen);
 
   return (

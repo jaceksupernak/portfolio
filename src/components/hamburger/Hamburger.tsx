@@ -26,13 +26,26 @@ export const HamburgerStyled = styled.button<HamburgerStyledProps>`
   
   div {
     width: 2rem;
-    height: 0.1rem;
-    // 0.2 -> 0.1
-    background: ${({ theme }) => theme.primaryLight};
+    height: ${({ isOpen }) => (isOpen ? '0.25rem' : '0.1rem')};
+    background: ${({ theme, isOpen }) => (isOpen ? theme.primaryDark : theme.primaryLight)};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
+  
+
+  :first-child {
+      transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg)' : 'rotate(0)')};
+    }
+
+    :nth-child(2) {
+      opacity: ${({ isOpen }) => (isOpen ? '0' : '1')};
+      transform: ${({ isOpen }) => (isOpen ? 'translateX(20px)' : 'translateX(0)')};
+    }
+
+    :nth-child(3) {
+      transform: ${({ isOpen }) => (isOpen ? 'translateY(5px) rotate(-45deg)' : 'translateY(0) rotate(0)')};
+    }
   }
 
   @media (min-width: ${({ theme }) => theme.screen.tablet}) {
