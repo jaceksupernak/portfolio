@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
     *{
@@ -12,7 +12,7 @@ export default createGlobalStyle`
         color: white;
     }
     body {
-        background-color: #000235;
+        background-color: ${({ theme }) => theme.primaryDark};
         overflow-x: hidden;
     }
     #root {
@@ -21,3 +21,5 @@ export default createGlobalStyle`
         justify-content: center;
     }
 `;
+
+export default GlobalStyle;

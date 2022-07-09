@@ -1,4 +1,4 @@
-const theme = {
+const dark = {
   primaryDark: '#000235',
   primaryDarkBleaker: '#515586',
   primaryDarkBrighter: '#BCC6FF',
@@ -12,4 +12,7 @@ const theme = {
   },
 };
 
+export type ThemeType = typeof dark;
+
+const theme = dark;
 export default theme;
