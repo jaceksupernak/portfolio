@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProfilePicture from '../profilepicture/ProfilePicture';
+import Socials from '../socials/Socials';
 
 const ProfileStyled = styled.section`
     display: flex;
@@ -13,7 +14,7 @@ const Profile:React.FC = () => (
   <ProfileStyled>
 
     <ProfilePicture />
-    <div>git in twtr</div>
+    <Socials />
 
   </ProfileStyled>
 
