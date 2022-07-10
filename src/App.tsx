@@ -4,6 +4,7 @@ import GlobalStyle from './theme/global';
 import theme from './theme/theme';
 import Eclipses from './components/eclipses/Eclipses';
 import Navbar from './components/navbar/Navbar';
+import Hero from './components/hero/Hero';
 
 const SiteWrapper = styled.div`
   width: 100%;
@@ -17,6 +18,7 @@ const App:React.FC = () => (
       <GlobalStyle />
       <SiteWrapper>
         <Navbar />
+        <Hero />
         <Eclipses />
       </SiteWrapper>
     </>
