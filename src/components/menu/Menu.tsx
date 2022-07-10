@@ -20,7 +20,6 @@ const MenuStyled = styled.div<MenuStyledProps>`
   right: 0;
   width: 100%;
   transition: transform 0.3s ease-in-out;
-  z-index: 2;
   transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(100%)')};
   
   @media (min-width: ${({ theme }) => theme.screen.mobile}) {

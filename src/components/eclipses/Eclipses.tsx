@@ -19,7 +19,7 @@ const Eclipse = styled.div<EclipseProps>`
   top: ${(props) => props.top};
   filter: blur(${(props) => props.blur});
   opacity:  ${(props) => (props.opacity ? props.opacity : 1)};
-  z-index: 1;
+  z-index: -1;
 `;
 
 const Eclipses:React.FC = () => (
