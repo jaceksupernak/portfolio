@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import SocialIcon from '../socialicon/SocialIcon';
 
 const SocialsStyled = styled.section`
 
@@ -8,7 +9,7 @@ const SocialsStyled = styled.section`
 const Socials:React.FC = () => (
   <SocialsStyled>
 
-    sd asd asd
+    <SocialIcon />
 
   </SocialsStyled>
 
