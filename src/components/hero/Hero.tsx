@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Profile from '../profile/Profile';
 
 const HeroStyled = styled.section`
     display: flex;
@@ -11,7 +12,7 @@ const HeroStyled = styled.section`
 const Hero:React.FC = () => (
   <HeroStyled>
 
-    <div>Profile picture</div>
+    <Profile />
     <div>Jacek Supernak</div>
 
   </HeroStyled>
