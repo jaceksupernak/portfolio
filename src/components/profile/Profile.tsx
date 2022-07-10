@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ProfilePicture from '../profilepicture/ProfilePicture';
 
 const ProfileStyled = styled.section`
     display: flex;
@@ -11,7 +12,7 @@ const ProfileStyled = styled.section`
 const Profile:React.FC = () => (
   <ProfileStyled>
 
-    <div>Profile picture</div>
+    <ProfilePicture />
     <div>git in twtr</div>
 
   </ProfileStyled>
