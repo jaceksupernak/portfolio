@@ -11,13 +11,11 @@ const ProfilePictureStyled = styled.img`
   @media (min-width: ${({ theme }) => theme.screen.tablet}) {
     height: 240px;
     width: 240px;
-    margin-top: 40px;
   }
 
   @media (min-width: ${({ theme }) => theme.screen.laptop}) {
     height: 260px;
     width: 260px;
-    margin-top: 80px;
   }
 `;
 

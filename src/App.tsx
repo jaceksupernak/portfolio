@@ -10,6 +10,7 @@ const SiteWrapper = styled.div`
   width: 100%;
   max-width: 800px; 
   position: relative;
+  padding: 10px;
 `;
 
 const App:React.FC = () => (

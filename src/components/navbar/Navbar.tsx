@@ -9,7 +9,6 @@ const NavbarStyled = styled.nav`
   justify-content: space-between;
   font-weight: 100;
   font-size: 1rem;
-  padding: 10px;
 
   @media (min-width: ${({ theme }) => theme.screen.laptop}) {
     font-size: 1.3rem;
