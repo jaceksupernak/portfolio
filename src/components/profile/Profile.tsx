@@ -12,7 +12,7 @@ const Profile:React.FC = () => (
   <ProfileStyled>
 
     <div>Profile picture</div>
-    <div>git in twtr</div>
+    <div>git in twt</div>
 
   </ProfileStyled>
 
