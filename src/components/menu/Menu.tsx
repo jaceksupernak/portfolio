@@ -22,15 +22,15 @@ const MenuStyled = styled.div<MenuStyledProps>`
   transition: transform 0.3s ease-in-out;
   transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(100%)')};
   
-  @media (min-width: ${({ theme }) => theme.screen.mobile}) {
-    max-width: 320px;;
-  }
-
   a {
     font-size: 2rem;
     padding: 1.5rem 0;
     letter-spacing: 0.2rem;
     color: ${({ theme }) => theme.primaryDark};
+  }
+
+  @media (min-width: ${({ theme }) => theme.screen.mobile}) {
+    max-width: 320px;;
   }
     
 `;
