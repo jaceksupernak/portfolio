@@ -10,7 +10,6 @@ const HeroStyled = styled.section`
     width: 100%;
 
     @media (min-width: ${({ theme }) => theme.screen.tablet}) {
-
       margin-top: 40px;
     }
 
@@ -21,8 +20,8 @@ const HeroStyled = styled.section`
       margin-top: 80px;
 
       & >:nth-child(1){
-      order: 2;
-    }
+        order: 2;
+      }
   }
 `;
 
