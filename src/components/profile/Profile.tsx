@@ -1,21 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HeroStyled = styled.section`
+const ProfileStyled = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 `;
 
-const Hero:React.FC = () => (
-  <HeroStyled>
+const Profile:React.FC = () => (
+  <ProfileStyled>
 
     <div>Profile picture</div>
-    <div>Jacek Supernak</div>
+    <div>git in twtr</div>
 
-  </HeroStyled>
+  </ProfileStyled>
 
 );
 
-export default Hero;
+export default Profile;
