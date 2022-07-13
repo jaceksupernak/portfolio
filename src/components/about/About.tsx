@@ -61,6 +61,12 @@ const AboutStyled = styled.section`
 
 const ButtonContainerStyled = styled.div`
     display: flex;
+    margin: 15px 0;
+    gap: 10px;
+
+    @media (min-width: ${({ theme }) => theme.screen.tablet}) {
+         align-self: start;
+    }
 `;
 
 const About:React.FC = () => (
@@ -77,22 +83,22 @@ const About:React.FC = () => (
         type="primary"
         text="open for hire"
         href="mailto:jjsupernak@gmail.com"
-        width="170px"
+        width="145px"
         height="40px"
-        fontSize="1rem"
+        fontSize="0.9rem"
       />
       <Button
         type="secondary"
         text="london"
         href="https://www.google.com/maps/place/London"
-        width="170px"
+        width="145px"
         height="40px"
-        fontSize="1rem"
+        fontSize="0.9rem"
         icon={{
           src: iconLocation,
           alt: 'location',
-          height: '21px',
-          width: '13px',
+          height: '18px',
+          width: '11px',
         }}
       />
     </ButtonContainerStyled>
