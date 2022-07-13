@@ -3,10 +3,6 @@ import styled from 'styled-components';
 
 const LogoStyled = styled.span`
   font-weight: 700;
-
-  @media (min-width: ${({ theme }) => theme.screen.laptop}) {
-    margin-left: 5px
-  }
 `;
 
 const SecondaryLight = styled.span`

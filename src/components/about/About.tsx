@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from '../button/Button';
+import iconLocation from '../../assets/location_icon.png';
 
 const AboutStyled = styled.section`
     display: flex;
@@ -20,9 +22,8 @@ const AboutStyled = styled.section`
     }
 
     p {
-        text-align: left;
-        padding: 5px;
-        max-width: 310px;
+        text-align: justify;
+        max-width: 300px;
         font-family: Roboto;
     }
 
@@ -32,7 +33,7 @@ const AboutStyled = styled.section`
         }
 
         p {
-            max-width: 475px;
+            max-width: 465px;
             font-size: 1.2rem;
         }
     }
@@ -40,22 +41,26 @@ const AboutStyled = styled.section`
     @media (min-width: ${({ theme }) => theme.screen.laptop}) {
 
         align-items: flex-start;
-        text-align: left;
-
-        h2 {
-            margin-left: 5px;
-        }
+     
 
         h1 {
             margin-top: 4px;
+            margin-bottom: 25px;
             font-size: 6rem;
+            position: relative;
+            left: -5px;
+            text-align: left;
         }
 
         p {
-           
-            max-width: 475px;
+            max-width: 406px;
+            text-align: justify;
         }
     }
+`;
+
+const ButtonContainerStyled = styled.div`
+    display: flex;
 `;
 
 const About:React.FC = () => (
@@ -67,11 +72,30 @@ const About:React.FC = () => (
       I specialise in Front End Development with a focus on mobile first responsive design.
       I am skilled in working in Agile/Scrum methodology and I thrive in a team environment.
     </p>
-    <div>
-      <div>button1</div>
-      <div>button2</div>
-    </div>
-
+    <ButtonContainerStyled>
+      <Button
+        type="primary"
+        text="open for hire"
+        href="mailto:jjsupernak@gmail.com"
+        width="170px"
+        height="40px"
+        fontSize="1rem"
+      />
+      <Button
+        type="secondary"
+        text="london"
+        href="https://www.google.com/maps/place/London"
+        width="170px"
+        height="40px"
+        fontSize="1rem"
+        icon={{
+          src: iconLocation,
+          alt: 'location',
+          height: '21px',
+          width: '13px',
+        }}
+      />
+    </ButtonContainerStyled>
   </AboutStyled>
 
 );
