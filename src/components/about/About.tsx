@@ -24,7 +24,7 @@ const AboutStyled = styled.section`
     p {
         text-align: justify;
         max-width: 300px;
-        font-family: Roboto;
+        font-family: ${({ theme }) => theme.secondaryFontFamily}
     }
 
     @media (min-width: ${({ theme }) => theme.screen.tablet}) {

@@ -1,17 +1,29 @@
 import React from 'react';
-import styled from 'styled-components';
+import { SectionHeaderStyled } from '../../App';
+import { SkillsStyled, SkillStyled } from './Skills.styled';
 
-const SkillsStyled = styled.div`
-  width: 100%;
-  height: 70px;
-  background: linear-gradient(91.78deg, #515586 -44.01%, rgba(204, 207, 255, 0) 140.31%);
-  border-radius: 5px;
-`;
+const skillsData = [
+  'HTML5',
+  'S(CSS)',
+  'StyledComponents',
+  'ReactJS',
+  'Javascript ES6',
+  'TypeScript',
+  'Git',
+  'Agile/Scrum',
+];
 
 const Skills:React.FC = () => (
-  <SkillsStyled>
-    sadsadasd
-  </SkillsStyled>
+  <>
+    <SectionHeaderStyled>skills</SectionHeaderStyled>
+    <SkillsStyled>
+      {skillsData.map((skill) => (
+        <SkillStyled key={skill}>
+          {skill}
+        </SkillStyled>
+      ))}
+    </SkillsStyled>
+  </>
 );
 
 export default Skills;

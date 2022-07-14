@@ -6,12 +6,22 @@ import Eclipses from './components/eclipses/Eclipses';
 import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
 import Skills from './components/skills/Skills';
+import Experience from './components/experience/Experience';
 
 const SiteWrapper = styled.div`
   width: 100%;
   max-width: 800px; 
   position: relative;
   padding: 10px;
+`;
+
+export const SectionHeaderStyled = styled.h5`
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-family: ${theme.secondaryFontFamily};
+  font-weight: 400;
+  letter-spacing: 0.13rem; 
 `;
 
 const App:React.FC = () => (
@@ -22,6 +32,7 @@ const App:React.FC = () => (
         <Navbar />
         <Hero />
         <Skills />
+        <Experience />
         <Eclipses />
       </SiteWrapper>
     </>

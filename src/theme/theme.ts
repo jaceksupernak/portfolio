@@ -8,6 +8,8 @@ const dark = {
   primaryLightTransparent: 'rgba(255, 255, 255, 0.5)', //#FFFFF
   secondaryLight: 'rgba(241, 118, 224, 1)', //#F176E0
   secondaryLightBrighter: 'rgba(255, 182, 245, 1)', //#FFB6F5
+  primaryFontFamily: 'Outfit',
+  secondaryFontFamily: 'Roboto',
   screen: {
     mobile: '400px',
     tablet: '500px',
