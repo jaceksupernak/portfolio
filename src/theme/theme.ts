@@ -2,6 +2,7 @@
 const dark = {
   primaryDark: 'rgba(0, 2, 53, 1)', //#000235
   primaryDarkBleaker: 'rgba(81, 85, 134, 1)', //#515586
+  primaryDarkBleakerTransparent: 'rgba(81, 85, 134, 0.5)', //#515586
   primaryDarkBrighter: 'rgba(188, 198, 255, 1)', //#BCC6FF
   primaryLight: 'rgba(255, 255, 255, 1)', //#FFFFFF
   primaryLightTransparent: 'rgba(255, 255, 255, 0.5)', //#FFFFF

@@ -5,6 +5,7 @@ import theme from './theme/theme';
 import Eclipses from './components/eclipses/Eclipses';
 import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
+import Skills from './components/skills/Skills';
 
 const SiteWrapper = styled.div`
   width: 100%;
@@ -20,6 +21,7 @@ const App:React.FC = () => (
       <SiteWrapper>
         <Navbar />
         <Hero />
+        <Skills />
         <Eclipses />
       </SiteWrapper>
     </>
