@@ -1,11 +1,12 @@
 // define the dark theme which is the current default
 const dark = {
-  primaryDark: '#000235',
-  primaryDarkBleaker: '#515586',
-  primaryDarkBrighter: '#BCC6FF',
-  primaryLight: '#FFFFFF',
-  secondaryLight: '#F176E0',
-  secondaryLightBrighter: '#FFB6F5',
+  primaryDark: 'rgba(0, 2, 53, 1)', //#000235
+  primaryDarkBleaker: 'rgba(81, 85, 134, 1)', //#515586
+  primaryDarkBrighter: 'rgba(188, 198, 255, 1)', //#BCC6FF
+  primaryLight: 'rgba(255, 255, 255, 1)', //#FFFFFF
+  primaryLightTransparent: 'rgba(255, 255, 255, 0.5)', //#FFFFF
+  secondaryLight: 'rgba(241, 118, 224, 1)', //#F176E0
+  secondaryLightBrighter: 'rgba(255, 182, 245, 1)', //#FFB6F5
   screen: {
     mobile: '400px',
     tablet: '500px',

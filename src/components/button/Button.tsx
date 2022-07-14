@@ -36,7 +36,7 @@ const ButtonStyled = styled.a<ButtonStyledProps>`
   font-weight: bold;
   font-size: ${({ fontSize }) => (fontSize)};
   color: ${({ type, theme }) => (type === 'primary' ? theme.primaryDark : theme.primaryLight)};
-  box-shadow:${({ type, theme }) => (type === 'secondary' ? `inset 0px 0px 0px 1px ${theme.primaryLight}` : 'none')}; 
+  box-shadow:${({ type, theme }) => (type === 'secondary' ? `inset 0px 0px 0px 1px ${theme.primaryLightTransparent}` : 'none')}; 
   background:  ${({ type, theme }) => {
     switch (type) {
       case 'primary':
