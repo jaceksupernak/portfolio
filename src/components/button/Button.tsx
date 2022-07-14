@@ -49,12 +49,16 @@ const ButtonStyled = styled.a<ButtonStyledProps>`
         return null;
     }
   }};
-  
   height: ${({ height }) => (height)};
   width: ${({ width }) => (width)};
   text-decoration: none;
   text-transform:  ${({ toLowerCase }) => (toLowerCase ? 'none' : 'uppercase')};
-  border-radius: 13px
+  border-radius: 13px;
+
+  transition: filter 0.3s linear;
+  &:hover {
+    filter: brightness(80%);
+  }
 `;
 
 const Button:React.FC<ButtonProps> = ({

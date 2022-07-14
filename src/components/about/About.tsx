@@ -9,7 +9,7 @@ const AboutStyled = styled.section`
     align-items: center;
     text-align: center;
 
-    h2 {
+    h3 {
         font-size: 1.6rem;
         letter-spacing: 0.2rem;
         font-weight: 400;
@@ -72,7 +72,7 @@ const ButtonContainerStyled = styled.div`
 const About:React.FC = () => (
   <AboutStyled>
 
-    <h2>Jacek Supernak</h2>
+    <h3>Jacek Supernak</h3>
     <h1>Front-End Developer</h1>
     <p>
       I specialise in Front End Development with a focus on mobile first responsive design.
