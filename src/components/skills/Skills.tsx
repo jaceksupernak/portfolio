@@ -1,17 +1,7 @@
 import React from 'react';
 import { SectionHeaderStyled } from '../../App';
 import { SkillsStyled, SkillStyled } from './Skills.styled';
-
-const skillsData = [
-  'HTML5',
-  'S(CSS)',
-  'StyledComponents',
-  'ReactJS',
-  'Javascript ES6',
-  'TypeScript',
-  'Git',
-  'Agile/Scrum',
-];
+import { skillsData } from '../../data/Data';
 
 const Skills:React.FC = () => (
   <>
