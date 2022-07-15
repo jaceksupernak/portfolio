@@ -7,9 +7,14 @@ export const SiteWrapper = styled.div`
     padding: 10px;
 `;
 
-export const SpanLight = styled.span`
-    font-weight: 100;
-    font-size: 1rem;
+interface SpanStyledProps {
+    fontWeight: string;
+    fontSize: string;
+}
+
+export const SpanStyled = styled.span<SpanStyledProps>`
+    font-weight: ${({ fontWeight }) => fontWeight};
+    font-size: ${({ fontSize }) => fontSize};
     margin: 5px 0;
 `;
 
@@ -42,7 +47,15 @@ export const Heading2Styled = styled.h2`
     }
 `;
 
-export const Heading3Styled = styled.h3`
+export const Heading3Styled = styled.h4`
+    font-size: 2rem;
+
+    @media (min-width: ${({ theme }) => theme.screen.tablet}) {
+        font-size: 3rem;
+    }
+`;
+
+export const Heading4Styled = styled.h4`
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
     font-weight: 400;

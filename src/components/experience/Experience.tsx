@@ -1,9 +1,9 @@
 import React from 'react';
 import {
   Heading2Styled,
-  Heading3Styled,
+  Heading4Styled,
   ParagraphStyled,
-  SpanLight,
+  SpanStyled,
   SectionHeadingStyled,
 } from '../../theme/styledElements';
 import {
@@ -24,12 +24,12 @@ const Experience:React.FC = () => (
       <ExperienceStyled key={id}>
         <ExperienceLogoLaptopViewStyled src={companyLogoBig} alt={name} width="285px" height="285px" />
         <ExperienceAboutStyled>
-          <Heading3Styled>{role}</Heading3Styled>
+          <Heading4Styled>{role}</Heading4Styled>
           <CompanyContainerStyled>
             <CompanyLogoStyled src={companyLogoSmall} alt={name} width="48px" height="48px" />
             <Heading2Styled>{name}</Heading2Styled>
           </CompanyContainerStyled>
-          <SpanLight>{duration}</SpanLight>
+          <SpanStyled fontWeight="100" fontSize="1rem">{duration}</SpanStyled>
           <ParagraphStyled>{description}</ParagraphStyled>
         </ExperienceAboutStyled>
       </ExperienceStyled>

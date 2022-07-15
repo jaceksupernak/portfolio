@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../button/Button';
 import iconLocation from '../../assets/location_icon.png';
-import { ParagraphStyled, Heading1Styled, Heading3Styled } from '../../theme/styledElements';
+import { ParagraphStyled, Heading1Styled, Heading4Styled } from '../../theme/styledElements';
 
 const AboutStyled = styled.section`
     display: flex;
@@ -27,7 +27,7 @@ const ButtonContainerStyled = styled.div`
 
 const About:React.FC = () => (
   <AboutStyled>
-    <Heading3Styled>Jacek Supernak</Heading3Styled>
+    <Heading4Styled>Jacek Supernak</Heading4Styled>
     <Heading1Styled>Front-End Developer</Heading1Styled>
     <ParagraphStyled>
       I specialise in Front End Development with a focus on mobile first responsive design.
