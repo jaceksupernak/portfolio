@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import {
   Heading2Styled,
   Heading3Styled,
+  ParagraphStyled,
   SpanLight,
   SectionHeadingStyled,
-  ParagraphStyled,
-} from '../../App';
+
+} from '../../theme/styledElements';
 import chinguLogoBig from '../../assets/experience_chingu_big.png';
 import chinguLogoSmall from '../../assets/experience_chingu_small.png';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../button/Button';
 import iconLocation from '../../assets/location_icon.png';
-import { ParagraphStyled, Heading1Styled, Heading3Styled } from '../../App';
+import { ParagraphStyled, Heading1Styled, Heading3Styled } from '../../theme/styledElements';
 
 const AboutStyled = styled.section`
     display: flex;

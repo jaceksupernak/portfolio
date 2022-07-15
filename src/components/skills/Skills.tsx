@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionHeadingStyled } from '../../App';
+import { SectionHeadingStyled } from '../../theme/styledElements';
 import { SkillsStyled, SkillStyled } from './Skills.styled';
 import { skillsData } from '../../data/Data';
 
