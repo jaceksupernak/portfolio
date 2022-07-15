@@ -13,6 +13,7 @@ export const ProjectStyled = styled.div`
     gap: 30px;
     background: linear-gradient(91.78deg, #515586 -44.01%, rgba(255, 255, 255, 0) 140.31%);
     padding: 10px;
+    padding-bottom: 20px;
 
     @media (min-width: ${({ theme }) => theme.screen.tablet}) {
         padding: 10px 20px 20px 20px;
