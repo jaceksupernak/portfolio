@@ -2,42 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../button/Button';
 import iconLocation from '../../assets/location_icon.png';
-import { ParagraphStyled, Heading3Styled } from '../../App';
+import { ParagraphStyled, Heading1Styled, Heading3Styled } from '../../App';
 
 const AboutStyled = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
-    h1 {
-        font-size: 4rem;
-        line-height: 80%;
-        margin: 20px 0;
-    }
-
-
-    @media (min-width: ${({ theme }) => theme.screen.tablet}) {
-        h1 {
-            font-size: 3rem;
-        }
-
-    }
 
     @media (min-width: ${({ theme }) => theme.screen.laptop}) {
 
         align-items: flex-start;
      
-
-        h1 {
-            margin-top: 4px;
-            margin-bottom: 25px;
-            font-size: 6rem;
-            position: relative;
-            left: -5px;
-            text-align: left;
-        }
-
     }
 `;
 
@@ -55,7 +31,7 @@ const About:React.FC = () => (
   <AboutStyled>
 
     <Heading3Styled>Jacek Supernak</Heading3Styled>
-    <h1>Front-End Developer</h1>
+    <Heading1Styled>Front-End Developer</Heading1Styled>
     <ParagraphStyled>
       I specialise in Front End Development with a focus on mobile first responsive design.
       I am skilled in working in Agile/Scrum methodology and I thrive in a team environment.

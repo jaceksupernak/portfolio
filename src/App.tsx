@@ -15,9 +15,27 @@ const SiteWrapper = styled.div`
   padding: 10px;
 `;
 
+export const Heading1Styled = styled.h1`
+  font-size: 4rem;
+  line-height: 80%;
+  margin: 20px 0;
+
+  @media (min-width: ${theme.screen.tablet}) {
+    font-size: 3rem;
+  }
+  @media (min-width: ${theme.screen.laptop}) {
+    margin-top: 4px;
+    margin-bottom: 25px;
+    font-size: 6rem;
+    position: relative;
+    left: -5px;
+    text-align: left;
+  }
+`;
+
 export const Heading2Styled = styled.h2`
   font-size: 3rem;
-  /* line-height: 80%; */
+
   @media (min-width: ${theme.screen.tablet}) {
     font-size: 4rem;
     }
