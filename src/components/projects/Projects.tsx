@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionHeadingStyled, Heading3Styled, SpanStyled } from '../../theme/styledElements';
-// import { projectsData } from '../../data/Data';
+import { projectsData } from '../../data/Data';
 import Button from '../button/Button';
 import {
   ProjectsContainerStyled,
@@ -13,32 +13,6 @@ import {
   TechnologiesContainerStyled,
   TechnologyStyled,
 } from './Projects.styled';
-
-import chinguLogoSmall from '../../assets/experience_chingu_small.png';
-import projectLiteTalk from '../../assets/project_litetalk.png';
-
-const projectsData = [{
-  id: 1,
-  name: 'Litetalk',
-  description: 'a lightweight messanger app',
-  liveLink: 'https://www.litetalk.herokuapp.com/',
-  gitHubLink: 'https://github.com/chingu-voyages/v39-bears-team-11',
-  technologies: [
-    'HTML5',
-    'CSS',
-    'JavaScript ES6',
-    'ReactJS', 'NodeJS',
-    'Redux',
-    'Express',
-    'MongoDB',
-    'Agile/Scrum',
-    'Git',
-    'Figma',
-    'Heroku',
-  ],
-  laptopImage: projectLiteTalk,
-  cornerLogo: chinguLogoSmall,
-}];
 
 const Projects:React.FC = () => (
   <>

@@ -1,5 +1,6 @@
 import chinguLogoBig from '../assets/experience_chingu_big.png';
 import chinguLogoSmall from '../assets/experience_chingu_small.png';
+import projectLiteTalk from '../assets/project_litetalk.png';
 
 export const skillsData = [
   'HTML5',
@@ -23,3 +24,26 @@ export const experienceData = [
     companyLogoSmall: chinguLogoSmall,
   },
 ];
+
+export const projectsData = [{
+  id: 1,
+  name: 'Litetalk',
+  description: 'a lightweight messanger app',
+  liveLink: 'https://www.litetalk.herokuapp.com/',
+  gitHubLink: 'https://github.com/chingu-voyages/v39-bears-team-11',
+  technologies: [
+    'HTML5',
+    'CSS',
+    'JavaScript ES6',
+    'ReactJS', 'NodeJS',
+    'Redux',
+    'Express',
+    'MongoDB',
+    'Agile/Scrum',
+    'Git',
+    'Figma',
+    'Heroku',
+  ],
+  laptopImage: projectLiteTalk,
+  cornerLogo: chinguLogoSmall,
+}];
