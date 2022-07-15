@@ -11,9 +11,7 @@ const AboutStyled = styled.section`
     text-align: center;
 
     @media (min-width: ${({ theme }) => theme.screen.laptop}) {
-
         align-items: flex-start;
-     
     }
 `;
 
@@ -29,7 +27,6 @@ const ButtonContainerStyled = styled.div`
 
 const About:React.FC = () => (
   <AboutStyled>
-
     <Heading3Styled>Jacek Supernak</Heading3Styled>
     <Heading1Styled>Front-End Developer</Heading1Styled>
     <ParagraphStyled>
@@ -61,7 +58,6 @@ const About:React.FC = () => (
       />
     </ButtonContainerStyled>
   </AboutStyled>
-
 );
 
 export default About;

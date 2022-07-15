@@ -47,6 +47,7 @@ export const Heading3Styled = styled.h3`
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   font-weight: 400;
+
   @media (min-width: ${({ theme }) => theme.screen.mobile}) {
     font-size: 1.6rem;
   }
@@ -65,6 +66,7 @@ export const ParagraphStyled = styled.p`
   max-width: 300px;
   text-align: justify;
   font-family: ${({ theme }) => theme.secondaryFontFamily};
+  
   @media (min-width: ${({ theme }) => theme.screen.tablet}) {
             max-width: 465px;
             font-size: 1.2rem;
