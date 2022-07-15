@@ -15,7 +15,25 @@ const SiteWrapper = styled.div`
   padding: 10px;
 `;
 
-export const SectionHeaderStyled = styled.h5`
+export const Heading2Styled = styled.h2`
+  font-size: 3rem;
+  /* line-height: 80%; */
+  @media (min-width: ${theme.screen.tablet}) {
+    font-size: 4rem;
+    }
+  @media (min-width: ${theme.screen.laptop}) {
+    font-size: 5rem;
+    
+  }
+`;
+
+export const Heading3Styled = styled.h3`
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+`;
+
+export const SectionHeadingStyled = styled.h5`
   text-transform: uppercase;
   margin-top: 50px;
   margin-bottom: 5px;
@@ -36,6 +54,12 @@ export const ParagraphStyled = styled.p`
     max-width: 406px;
     
   }
+`;
+
+export const SpanLight = styled.span`
+  font-weight: 100;
+  font-size: 1rem;
+  margin: 5px 0;
 `;
 
 const App:React.FC = () => (

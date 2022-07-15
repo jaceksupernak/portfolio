@@ -1,11 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionHeaderStyled, ParagraphStyled } from '../../App';
+import {
+  Heading2Styled,
+  Heading3Styled,
+  SpanLight,
+  SectionHeadingStyled,
+  ParagraphStyled,
+} from '../../App';
 import chinguLogoBig from '../../assets/experience_chingu_big.png';
+import chinguLogoSmall from '../../assets/experience_chingu_small.png';
 
 const ExperienceStyled = styled.div`
     display: flex;
     justify-content: end;
+    align-items: center;
     @media (min-width: ${({ theme }) => theme.screen.laptop}) {
         justify-content: space-between;
     
@@ -27,15 +35,31 @@ const ExperienceAboutStyled = styled.div`
 
 `;
 
+const CompanyContainerStyled = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`;
+
+const CompanyLogoStyled = styled.img`
+  @media (min-width: ${({ theme }) => theme.screen.laptop}) {
+          display: none;
+      
+    }
+`;
+
 const Experience:React.FC = () => (
   <>
-    <SectionHeaderStyled>experience</SectionHeaderStyled>
+    <SectionHeadingStyled>experience</SectionHeadingStyled>
     <ExperienceStyled>
-      <ExperienceLogoLaptopViewStyled src={chinguLogoBig} alt="Chingu" />
+      <ExperienceLogoLaptopViewStyled src={chinguLogoBig} alt="Chingu" width="285px" height="285px" />
       <ExperienceAboutStyled>
-        <span>Front-End Developer</span>
-        <span>Chingu</span>
-        <span>January 2022 - June 2022</span>
+        <Heading3Styled>Front-End Developer</Heading3Styled>
+        <CompanyContainerStyled>
+          <CompanyLogoStyled src={chinguLogoSmall} alt="Chingu" width="48px" height="48px" />
+          <Heading2Styled>Chingu</Heading2Styled>
+        </CompanyContainerStyled>
+        <SpanLight>January 2022 - June 2022</SpanLight>
         <ParagraphStyled>
           Participated in three remote open source team projects.
           Each of the project was built in an international team of three to five developers

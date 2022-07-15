@@ -1,11 +1,11 @@
 import React from 'react';
-import { SectionHeaderStyled } from '../../App';
+import { SectionHeadingStyled } from '../../App';
 import { SkillsStyled, SkillStyled } from './Skills.styled';
 import { skillsData } from '../../data/Data';
 
 const Skills:React.FC = () => (
   <>
-    <SectionHeaderStyled>skills</SectionHeaderStyled>
+    <SectionHeadingStyled>skills</SectionHeadingStyled>
     <SkillsStyled>
       {skillsData.map((skill) => (
         <SkillStyled key={skill}>

@@ -2,20 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../button/Button';
 import iconLocation from '../../assets/location_icon.png';
-import { ParagraphStyled } from '../../App';
+import { ParagraphStyled, Heading3Styled } from '../../App';
 
 const AboutStyled = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-    h3 {
-        font-size: 1.6rem;
-        letter-spacing: 0.2rem;
-        font-weight: 400;
-    }
-
+    
     h1 {
         font-size: 4rem;
         line-height: 80%;
@@ -60,7 +54,7 @@ const ButtonContainerStyled = styled.div`
 const About:React.FC = () => (
   <AboutStyled>
 
-    <h3>Jacek Supernak</h3>
+    <Heading3Styled>Jacek Supernak</Heading3Styled>
     <h1>Front-End Developer</h1>
     <ParagraphStyled>
       I specialise in Front End Development with a focus on mobile first responsive design.
