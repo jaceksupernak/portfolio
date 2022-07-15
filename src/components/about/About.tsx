@@ -15,7 +15,7 @@ const AboutStyled = styled.section`
     }
 `;
 
-const ButtonContainerStyled = styled.div`
+const ButtonsContainerStyled = styled.div`
     display: flex;
     margin: 15px 0;
     gap: 10px;
@@ -33,7 +33,7 @@ const About:React.FC = () => (
       I specialise in Front End Development with a focus on mobile first responsive design.
       I am skilled in working in Agile/Scrum methodology and I thrive in a team environment.
     </ParagraphStyled>
-    <ButtonContainerStyled>
+    <ButtonsContainerStyled>
       <Button
         type="primary"
         text="open for hire"
@@ -56,7 +56,7 @@ const About:React.FC = () => (
           width: '11px',
         }}
       />
-    </ButtonContainerStyled>
+    </ButtonsContainerStyled>
   </AboutStyled>
 );
 
