@@ -1,6 +1,7 @@
 import chinguLogoBig from '../assets/experience_chingu_big.png';
 import chinguLogoSmall from '../assets/experience_chingu_small.png';
 import projectLiteTalk from '../assets/project_litetalk.png';
+import projectDevelapp from '../assets/project_develapp.png';
 
 export const skillsData = [
   'HTML5',
@@ -25,25 +26,49 @@ export const experienceData = [
   },
 ];
 
-export const projectsData = [{
-  id: 1,
-  name: 'Litetalk',
-  description: 'a lightweight messanger app',
-  liveLink: 'https://www.litetalk.herokuapp.com/',
-  gitHubLink: 'https://github.com/chingu-voyages/v39-bears-team-11',
-  technologies: [
-    'HTML5',
-    'CSS',
-    'JavaScript ES6',
-    'ReactJS', 'NodeJS',
-    'Redux',
-    'Express',
-    'MongoDB',
-    'Agile/Scrum',
-    'Git',
-    'Figma',
-    'Heroku',
-  ],
-  laptopImage: projectLiteTalk,
-  cornerLogo: chinguLogoSmall,
-}];
+export const projectsData = [
+  {
+    id: 1,
+    name: 'Litetalk',
+    description: 'a lightweight messanger app',
+    liveLink: 'https://www.litetalk.herokuapp.com/',
+    gitHubLink: 'https://github.com/chingu-voyages/v39-bears-team-11',
+    technologies: [
+      'HTML5',
+      'CSS',
+      'JavaScript ES6',
+      'ReactJS', 'NodeJS',
+      'Redux',
+      'Express',
+      'MongoDB',
+      'Agile/Scrum',
+      'Git',
+      'Figma',
+      'Heroku',
+    ],
+    laptopImage: projectLiteTalk,
+    cornerLogo: chinguLogoSmall,
+  },
+  {
+    id: 2,
+    name: 'Develapp',
+    description: 'an app dea aggregator',
+    liveLink: 'https://www.devel-app.herokuapp.com/',
+    gitHubLink: 'https://github.com/chingu-voyages/v38-geckos-team-04',
+    technologies: [
+      'HTML5',
+      'SCSS',
+      'JavaScript ES6',
+      'ReactJS', 'NodeJS',
+      'Express',
+      'MongoDB',
+      'Agile/Scrum',
+      'Git',
+      'Figma',
+      'Heroku',
+    ],
+    laptopImage: projectDevelapp,
+    cornerLogo: chinguLogoSmall,
+  },
+
+];
