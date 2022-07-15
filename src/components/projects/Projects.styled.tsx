@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 export const ProjectsContainerStyled = styled.section`
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
+    gap: 30px;
 `;
 
 export const ProjectStyled = styled.div`
