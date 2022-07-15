@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../button/Button';
 import iconLocation from '../../assets/location_icon.png';
+import { ParagraphStyled } from '../../App';
 
 const AboutStyled = styled.section`
     display: flex;
@@ -21,21 +22,12 @@ const AboutStyled = styled.section`
         margin: 20px 0;
     }
 
-    p {
-        text-align: justify;
-        max-width: 300px;
-        font-family: ${({ theme }) => theme.secondaryFontFamily}
-    }
 
     @media (min-width: ${({ theme }) => theme.screen.tablet}) {
         h1 {
             font-size: 3rem;
         }
 
-        p {
-            max-width: 465px;
-            font-size: 1.2rem;
-        }
     }
 
     @media (min-width: ${({ theme }) => theme.screen.laptop}) {
@@ -52,10 +44,6 @@ const AboutStyled = styled.section`
             text-align: left;
         }
 
-        p {
-            max-width: 406px;
-            text-align: justify;
-        }
     }
 `;
 
@@ -74,10 +62,10 @@ const About:React.FC = () => (
 
     <h3>Jacek Supernak</h3>
     <h1>Front-End Developer</h1>
-    <p>
+    <ParagraphStyled>
       I specialise in Front End Development with a focus on mobile first responsive design.
       I am skilled in working in Agile/Scrum methodology and I thrive in a team environment.
-    </p>
+    </ParagraphStyled>
     <ButtonContainerStyled>
       <Button
         type="primary"

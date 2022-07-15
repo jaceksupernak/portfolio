@@ -24,6 +24,20 @@ export const SectionHeaderStyled = styled.h5`
   letter-spacing: 0.13rem; 
 `;
 
+export const ParagraphStyled = styled.p`
+  max-width: 300px;
+  text-align: justify;
+  font-family: ${theme.secondaryFontFamily};
+  @media (min-width: ${theme.screen.tablet}) {
+            max-width: 465px;
+            font-size: 1.2rem;
+    }
+  @media (min-width: ${theme.screen.laptop}) {
+    max-width: 406px;
+    
+  }
+`;
+
 const App:React.FC = () => (
   <ThemeProvider theme={theme}>
     <>
