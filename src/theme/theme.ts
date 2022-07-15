@@ -11,7 +11,7 @@ const dark = {
   primaryFontFamily: 'Outfit',
   secondaryFontFamily: 'Roboto',
   screen: {
-    mobile: '400px',
+    mobile: '321px',
     tablet: '500px',
     laptop: '800px',
   },

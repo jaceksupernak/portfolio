@@ -44,9 +44,12 @@ export const Heading2Styled = styled.h2`
 `;
 
 export const Heading3Styled = styled.h3`
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2rem;
   font-weight: 400;
+  @media (min-width: ${({ theme }) => theme.screen.mobile}) {
+    font-size: 1.6rem;
+  }
 `;
 
 export const SectionHeadingStyled = styled.h5`
