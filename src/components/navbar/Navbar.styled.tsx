@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const NavbarStyled = styled.nav`
+const NavbarStyled = styled.header`
   display: flex;
   justify-content: space-between;
   font-weight: 100;

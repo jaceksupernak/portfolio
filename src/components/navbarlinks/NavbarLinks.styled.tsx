@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const NavbarLinksStyled = styled.div`
+const NavbarLinksStyled = styled.nav`
   display: none;
   gap: 20px;
 
