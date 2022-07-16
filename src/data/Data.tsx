@@ -1,7 +1,10 @@
 import chinguLogoBig from '../assets/experience_chingu_big.png';
 import chinguLogoSmall from '../assets/experience_chingu_small.png';
+import projectPersonalWebsite from '../assets/project_personal_website.png';
 import projectLiteTalk from '../assets/project_litetalk.png';
 import projectDevelapp from '../assets/project_develapp.png';
+import projectGratitulendar from '../assets/project_gratitulendar.png';
+import projectKropkasbox from '../assets/project_kropkasbox.png';
 
 export const skillsData = [
   'HTML5',
@@ -29,6 +32,25 @@ export const experienceData = [
 export const projectsData = [
   {
     id: 1,
+    name: 'supernak.me',
+    description: 'we need to go deeper',
+    liveLink: '',
+    gitHubLink: 'https://github.com/jaceksupernak/portfolio',
+    technologies: [
+      'HTML5',
+      'StyledComponents',
+      'TypeScript',
+      'ReactJS',
+      'Git',
+      'Netflify',
+      'CloudFlare',
+      'Figma',
+    ],
+    laptopImage: projectPersonalWebsite,
+    cornerLogo: '',
+  },
+  {
+    id: 2,
     name: 'Litetalk',
     description: 'a lightweight messanger app',
     liveLink: 'https://www.litetalk.herokuapp.com/',
@@ -43,14 +65,14 @@ export const projectsData = [
       'MongoDB',
       'Agile/Scrum',
       'Git',
-      'Figma',
       'Heroku',
+      'Figma',
     ],
     laptopImage: projectLiteTalk,
     cornerLogo: chinguLogoSmall,
   },
   {
-    id: 2,
+    id: 3,
     name: 'Develapp',
     description: 'an app dea aggregator',
     liveLink: 'https://www.devel-app.herokuapp.com/',
@@ -69,5 +91,37 @@ export const projectsData = [
     laptopImage: projectDevelapp,
     cornerLogo: chinguLogoSmall,
   },
-
+  {
+    id: 4,
+    name: 'Gratitulendar',
+    description: 'a gratitude diary',
+    liveLink: 'https://gratitulendar.herokuapp.com/',
+    gitHubLink: 'https://github.com/chingu-voyages/v37-toucans-team-02',
+    technologies: [
+      'HTML5',
+      'CSS',
+      'JavaScript',
+      'Agile/Scrum',
+      'Git',
+      'Heroku',
+    ],
+    laptopImage: projectGratitulendar,
+    cornerLogo: chinguLogoSmall,
+  },
+  {
+    id: 5,
+    name: 'kropkasbox.com',
+    description: 'a comic strip website about a grumpy cat',
+    liveLink: 'https://www.kropkasbox.com',
+    gitHubLink: 'https://github.com/jaceksupernak/kropkasbox',
+    technologies: [
+      'HTML5',
+      'CSS',
+      'JavaScript',
+      'Git',
+      'GH Pages',
+    ],
+    laptopImage: projectKropkasbox,
+    cornerLogo: '',
+  },
 ];

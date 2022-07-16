@@ -53,7 +53,7 @@ export const PresentationStyled = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 `;
 
 export const ImgStyled = styled.img`

@@ -22,7 +22,7 @@ const Projects:React.FC = () => (
         id, name, description, liveLink, gitHubLink, technologies, laptopImage, cornerLogo,
       }) => (
         <ProjectStyled key={id}>
-          <ProjectIconStyled src={cornerLogo} alt="made in team" width="48px" height="48px" />
+          {cornerLogo ? (<ProjectIconStyled src={cornerLogo} alt="made in team" width="48px" height="48px" />) : null }
           <AboutStyled>
             <Heading3Styled>{name}</Heading3Styled>
             <SpanStyled fontSize="1.2rem">{description}</SpanStyled>
@@ -43,14 +43,16 @@ const Projects:React.FC = () => (
                 height="40px"
                 fontSize="0.9rem"
               />
-              <Button
-                type="secondary"
-                text="live link"
-                href={liveLink}
-                width="145px"
-                height="40px"
-                fontSize="0.9rem"
-              />
+              {liveLink ? (
+                <Button
+                  type="secondary"
+                  text="live link"
+                  href={liveLink}
+                  width="145px"
+                  height="40px"
+                  fontSize="0.9rem"
+                />
+              ) : null}
             </ButtonsContainerStyled>
           </PresentationStyled>
         </ProjectStyled>
