@@ -1,16 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import SocialIcon from '../socialicon/SocialIcon';
 import githubIcon from '../../assets/github_icon.png';
 import linkedinIcon from '../../assets/linkedin_icon.png';
 import twitterIcon from '../../assets/twitter_icon.png';
-
-const SocialsStyled = styled.section`
-    display: flex;
-    gap: 15px;
-    padding: 15px;
-
-`;
+import SocialsStyled from './Socials.styled';
 
 const Socials:React.FC = () => (
   <SocialsStyled>
