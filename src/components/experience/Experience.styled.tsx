@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
-export const ExperienceStyled = styled.div`
+export const ExperienceContainerStyled = styled.section`
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+`;
+
+export const ExperienceStyled = styled.article`
     display: flex;
     justify-content: end;
     align-items: center;

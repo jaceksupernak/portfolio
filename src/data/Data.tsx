@@ -43,7 +43,7 @@ export const projectsData = [
       'ReactJS',
       'Git',
       'Netflify',
-      'CloudFlare',
+      'Cloudflare',
       'Figma',
     ],
     laptopImage: projectPersonalWebsite,

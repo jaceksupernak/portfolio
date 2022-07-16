@@ -7,14 +7,14 @@ export const ProjectsContainerStyled = styled.section`
     gap: 30px;
 `;
 
-export const ProjectStyled = styled.div`
+export const ProjectStyled = styled.article`
     display: flex;
     position: relative;
     flex-direction: column;
     border-radius: 4px;
     width: 100%;
     gap: 20px; 
-    background: ${({ theme }) => `linear-gradient(91.78deg, ${theme.primaryDarkBleaker} -44.01%, ${theme.transparent} 140.31%)`};
+    background: ${({ theme }) => `linear-gradient(91.78deg, ${theme.primaryDarkBleaker} -50%, ${theme.transparent} 140.31%)`};
     
     padding: 10px;
     padding-bottom: 20px;
