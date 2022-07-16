@@ -1,29 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import Button from '../button/Button';
 import iconLocation from '../../assets/location_icon.png';
 import { ParagraphStyled, Heading1Styled, Heading4Styled } from '../../theme/styledElements';
-
-const AboutStyled = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    @media (min-width: ${({ theme }) => theme.screen.laptop}) {
-        align-items: flex-start;
-    }
-`;
-
-const ButtonsContainerStyled = styled.div`
-    display: flex;
-    margin: 15px 0;
-    gap: 10px;
-
-    @media (min-width: ${({ theme }) => theme.screen.tablet}) {
-         align-self: start;
-    }
-`;
+import { AboutStyled, ButtonsContainerStyled } from './About.styled';
 
 const About:React.FC = () => (
   <AboutStyled>
