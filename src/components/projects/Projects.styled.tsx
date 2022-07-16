@@ -13,8 +13,10 @@ export const ProjectStyled = styled.div`
     flex-direction: column;
     border-radius: 4px;
     width: 100%;
-    gap: 30px;
+    gap: 20px;
     background: linear-gradient(91.78deg, #515586 -44.01%, rgba(255, 255, 255, 0) 140.31%);
+    background: ${({ theme }) => `linear-gradient(91.78deg, ${theme.primaryDarkBleaker} -44.01%, ${theme.primaryLight} 140.31%)`};
+    
     padding: 10px;
     padding-bottom: 20px;
 
@@ -28,7 +30,6 @@ export const ProjectStyled = styled.div`
         height: 290px;
         padding-bottom: 10px;
     }
-
 `;
 
 export const ProjectIconStyled = styled.img`
@@ -36,6 +37,7 @@ export const ProjectIconStyled = styled.img`
     top: -24px;
     right: 50%;
     transform: translateX(50%);
+
     @media (min-width: ${({ theme }) => theme.screen.laptop}) {
         top: -24px;
         right: -24px;
@@ -58,6 +60,7 @@ export const PresentationStyled = styled.div`
 export const ImgStyled = styled.img`
     height: 139px;
     width: 270px;
+
     @media (min-width: ${({ theme }) => theme.screen.tablet}) {
         height: 163px;
         width: 316px;
@@ -67,6 +70,7 @@ export const ImgStyled = styled.img`
 export const ButtonsContainerStyled = styled.div`
     display: flex;
     gap: 3px;
+
     @media (min-width: ${({ theme }) => theme.screen.mobile}) {
         gap: 10px;
     }
@@ -75,16 +79,23 @@ export const ButtonsContainerStyled = styled.div`
 export const TechnologiesContainerStyled = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-    @media (min-width: ${({ theme }) => theme.screen.laptop}) {
-        justify-content: start; 
+    justify-content: start;
+    gap: 5px;
+    margin-top: 25px;
+
+    @media (min-width: ${({ theme }) => theme.screen.tablet}) {
+        gap: 10px;
     }
 `;
 
 export const TechnologyStyled = styled.div`
     background-color: ${({ theme }) => theme.primaryDark};
     border-radius: 13px;
-    padding: 10px;
+    padding: 7px;
+    font-size: 0.8rem;
+
+    @media (min-width: ${({ theme }) => theme.screen.tablet}) {
+        padding: 10px;
+        font-size: 1rem;
+    } 
 `;

@@ -64,7 +64,6 @@ export const projectsData = [
       'MongoDB',
       'Agile/Scrum',
       'Git',
-      'Figma',
       'Heroku',
     ],
     laptopImage: projectDevelapp,

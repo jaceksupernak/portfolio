@@ -28,7 +28,7 @@ const Projects:React.FC = () => (
             <SpanStyled fontWeight="400" fontSize="1.2rem">{description}</SpanStyled>
             <TechnologiesContainerStyled>
               {technologies.map((tech) => (
-                <TechnologyStyled>{tech}</TechnologyStyled>
+                <TechnologyStyled key={tech}>{tech}</TechnologyStyled>
               ))}
             </TechnologiesContainerStyled>
           </AboutStyled>
