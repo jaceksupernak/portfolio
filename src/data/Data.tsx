@@ -9,7 +9,7 @@ import projectKropkasbox from '../assets/project_kropkasbox.png';
 export const skillsData = [
   'HTML5',
   'S(CSS)',
-  'StyledComponents',
+  'Styled Components',
   'ReactJS',
   'Javascript ES6',
   'TypeScript',
@@ -38,7 +38,7 @@ export const projectsData = [
     gitHubLink: 'https://github.com/jaceksupernak/portfolio',
     technologies: [
       'HTML5',
-      'StyledComponents',
+      'Styled Components',
       'TypeScript',
       'ReactJS',
       'Git',
@@ -74,7 +74,7 @@ export const projectsData = [
   {
     id: 3,
     name: 'Develapp',
-    description: 'an app dea aggregator',
+    description: 'an app idea aggregator',
     liveLink: 'https://www.devel-app.herokuapp.com/',
     gitHubLink: 'https://github.com/chingu-voyages/v38-geckos-team-04',
     technologies: [
@@ -120,6 +120,7 @@ export const projectsData = [
       'JavaScript',
       'Git',
       'GH Pages',
+      'Photoshop',
     ],
     laptopImage: projectKropkasbox,
     cornerLogo: '',
