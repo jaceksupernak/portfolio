@@ -6,6 +6,7 @@ interface iconProps {
   alt: string,
   height: string,
   width: string;
+  gapToText?: string;
 }
 
 interface ButtonProps {
@@ -16,11 +17,12 @@ interface ButtonProps {
   height: string,
   fontSize: string,
   toLowerCase?: boolean;
+  lightWeight?: boolean;
   icon?: iconProps;
 }
 
 const Button:React.FC<ButtonProps> = ({
-  type, text, href, width, height, fontSize, toLowerCase, icon,
+  type, text, href, width, height, fontSize, toLowerCase, lightWeight, icon,
 }) => (
   <ButtonStyled
     type={type}
@@ -28,7 +30,9 @@ const Button:React.FC<ButtonProps> = ({
     height={height}
     fontSize={fontSize}
     toLowerCase={toLowerCase}
+    lightWeight={lightWeight}
     href={href}
+    gapToText={icon && icon.gapToText ? icon.gapToText : '5px'}
   >
     {icon
       ? (

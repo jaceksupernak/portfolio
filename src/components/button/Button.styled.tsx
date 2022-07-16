@@ -6,14 +6,16 @@ interface ButtonStyledProps {
     height: string,
     fontSize: string,
     toLowerCase?: boolean;
+    lightWeight?: boolean;
+    gapToText?: string;
 }
 
 const ButtonStyled = styled.a<ButtonStyledProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-    font-weight: bold;
+    gap: ${({ gapToText }) => (gapToText)};
+    font-weight: ${({ lightWeight }) => (lightWeight ? 'regular' : 'bold')};
     font-size: ${({ fontSize }) => (fontSize)};
     color: ${({ type, theme }) => (type === 'primary' ? theme.primaryDark : theme.primaryLight)};
     box-shadow:${({ type, theme }) => (type === 'secondary' ? `inset 0px 0px 0px 1px ${theme.primaryLightTransparent}` : 'none')}; 
