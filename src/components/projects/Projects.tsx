@@ -5,10 +5,10 @@ import Button from '../button/Button';
 import {
   ProjectsContainerStyled,
   ProjectStyled,
-  ProjectIconStyled,
+  CornerLogoStyled,
   AboutStyled,
   PresentationStyled,
-  ImgStyled,
+  LaptopImageStyled,
   ButtonsContainerStyled,
   TechnologiesContainerStyled,
   TechnologyStyled,
@@ -22,7 +22,7 @@ const Projects:React.FC = () => (
         id, name, description, liveLink, gitHubLink, technologies, laptopImage, cornerLogo,
       }) => (
         <ProjectStyled key={id}>
-          {cornerLogo ? (<ProjectIconStyled src={cornerLogo} alt="made in team" width="48px" height="48px" />) : null }
+          {cornerLogo ? (<CornerLogoStyled src={cornerLogo} alt="made in team" width="48px" height="48px" />) : null }
           <AboutStyled>
             <Heading3Styled>{name}</Heading3Styled>
             <SpanStyled fontSize="1.2rem">{description}</SpanStyled>
@@ -33,7 +33,7 @@ const Projects:React.FC = () => (
             </TechnologiesContainerStyled>
           </AboutStyled>
           <PresentationStyled>
-            <ImgStyled src={laptopImage} alt={name} width="316" height="163" />
+            <LaptopImageStyled src={laptopImage} alt={name} width="316" height="163" />
             <ButtonsContainerStyled>
               <Button
                 type="primary"

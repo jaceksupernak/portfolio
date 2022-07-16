@@ -31,7 +31,7 @@ export const ProjectStyled = styled.article`
     }
 `;
 
-export const ProjectIconStyled = styled.img`
+export const CornerLogoStyled = styled.img`
     position: absolute;
     top: -24px;
     right: 50%;
@@ -56,7 +56,7 @@ export const PresentationStyled = styled.div`
     gap: 20px;
 `;
 
-export const ImgStyled = styled.img`
+export const LaptopImageStyled = styled.img`
     height: 139px;
     width: 270px;
 
