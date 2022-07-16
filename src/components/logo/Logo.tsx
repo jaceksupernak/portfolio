@@ -1,13 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const LogoStyled = styled.span`
-  font-weight: 700;
-`;
-
-const SecondaryLight = styled.span`
-  color: ${({ theme }) => theme.secondaryLight};
-`;
+import { LogoStyled, SecondaryLight } from './Logo.styled';
 
 const Logo:React.FC = () => (
   <LogoStyled>
