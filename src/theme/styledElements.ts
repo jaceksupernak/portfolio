@@ -8,14 +8,20 @@ export const SiteWrapper = styled.div`
 `;
 
 interface SpanStyledProps {
-    fontWeight: string;
-    fontSize: string;
+    fontWeight?: string;
+    fontSize?: string;
+    fontColor?: string;
+    margin?: string;
 }
 
 export const SpanStyled = styled.span<SpanStyledProps>`
-    font-weight: ${({ fontWeight }) => fontWeight};
-    font-size: ${({ fontSize }) => fontSize};
-    margin: 5px 0;
+    font-weight: ${({ fontWeight }) => (fontWeight || '400')};
+    font-size: ${({ fontSize }) => (fontSize || '1rem')};
+    margin: ${({ margin }) => (margin || 0)};
+`;
+
+export const SecondaryLight = styled.span`
+  color: ${({ theme }) => theme.secondaryLight};
 `;
 
 export const Heading1Styled = styled.h1`

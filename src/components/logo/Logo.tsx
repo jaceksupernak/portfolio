@@ -1,5 +1,6 @@
 import React from 'react';
-import { LogoStyled, SecondaryLight } from './Logo.styled';
+import { LogoStyled } from './Logo.styled';
+import { SecondaryLight } from '../../theme/styledElements';
 
 const Logo:React.FC = () => (
   <LogoStyled>

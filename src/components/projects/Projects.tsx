@@ -25,7 +25,7 @@ const Projects:React.FC = () => (
           <ProjectIconStyled src={cornerLogo} alt="made in team" width="48px" height="48px" />
           <AboutStyled>
             <Heading3Styled>{name}</Heading3Styled>
-            <SpanStyled fontWeight="400" fontSize="1.2rem">{description}</SpanStyled>
+            <SpanStyled fontSize="1.2rem">{description}</SpanStyled>
             <TechnologiesContainerStyled>
               {technologies.map((tech) => (
                 <TechnologyStyled key={tech}>{tech}</TechnologyStyled>
