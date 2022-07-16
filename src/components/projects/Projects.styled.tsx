@@ -13,9 +13,8 @@ export const ProjectStyled = styled.div`
     flex-direction: column;
     border-radius: 4px;
     width: 100%;
-    gap: 20px;
-    background: linear-gradient(91.78deg, #515586 -44.01%, rgba(255, 255, 255, 0) 140.31%);
-    background: ${({ theme }) => `linear-gradient(91.78deg, ${theme.primaryDarkBleaker} -44.01%, ${theme.primaryLight} 140.31%)`};
+    gap: 20px; 
+    background: ${({ theme }) => `linear-gradient(91.78deg, ${theme.primaryDarkBleaker} -44.01%, ${theme.transparent} 140.31%)`};
     
     padding: 10px;
     padding-bottom: 20px;
