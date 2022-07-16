@@ -8,6 +8,7 @@ import Hero from './components/hero/Hero';
 import Skills from './components/skills/Skills';
 import Experience from './components/experience/Experience';
 import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
 import Eclipses from './components/eclipses/Eclipses';
 
 const App:React.FC = () => (
@@ -19,6 +20,7 @@ const App:React.FC = () => (
       <Skills />
       <Experience />
       <Projects />
+      <Contact />
       <Eclipses />
     </SiteWrapper>
   </ThemeProvider>

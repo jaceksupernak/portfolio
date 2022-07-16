@@ -6,7 +6,7 @@ export const SkillsStyled = styled.div`
   align-items: start;
   flex-wrap: wrap;
   width: 100%;
-  background: linear-gradient(91.78deg, #515586 -44.01%, rgba(204, 207, 255, 0) 140.31%);
+  background: ${({ theme }) => `linear-gradient(91.78deg, ${theme.primaryDarkBleaker} -44.01%, ${theme.transparent} 140.31%)`};
   border-radius: 5px; 
 
   @media (min-width: ${({ theme }) => theme.screen.laptop}) {
