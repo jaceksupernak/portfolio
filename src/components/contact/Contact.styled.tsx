@@ -12,15 +12,15 @@ export const ContactContainerStyled = styled.section`
     background: ${({ theme }) => `linear-gradient(98.09deg, ${theme.primaryDarkBrighter} -31.03%, ${theme.secondaryLightBrighter} 79.54%)`};
 
     @media (min-width: ${({ theme }) => theme.screen.mobile}) {
-        padding: 50px 0px;
+        padding: 50px 0;
     }
 
     @media (min-width: ${({ theme }) => theme.screen.tablet}) {
-        padding: 50px 0px;
+        padding: 50px 0;
     }
 
     @media (min-width: ${({ theme }) => theme.screen.laptop}) {
-        padding: 70px 0px;
+        padding: 70px 0;
     }
 `;
 
@@ -50,10 +50,6 @@ export const WavyLineStyled = styled.img`
     @media (min-width: ${({ theme }) => theme.screen.tablet}) {
         max-width: 90vw; 
     }
-
-    @media (min-width: ${({ theme }) => theme.screen.laptop}) {
-        max-width: 100vh;
-    }
 `;
 
 export const ButtonStyleWrapper = styled.div`
@@ -78,9 +74,9 @@ export const ButtonStyleWrapper = styled.div`
             height: 90px;
         }
         a img {
-        display: block;
-        height: 50px;
-        width: 50px;
+            display: block;
+            height: 50px;
+            width: 50px;
         }
     }
 
