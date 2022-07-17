@@ -10,6 +10,33 @@ interface ButtonStyledProps {
     gapToText?: string;
 }
 
+// ------------------------------------------------------------
+// There are 3 types of button: primary, secondary, tertiary
+//
+// Primary button, used in <About><Projects>
+// -font color of the primaryDark
+// -gradient backround of the secondaryLight color
+//
+// Secondary button, used in <About><Projects>
+// -font color of the primaryLight
+// -transparent background
+// -inline 1px border of the primaryLightTransparent color
+//
+// Tertiary button, used in <Contact>
+// -font color of the primaryLight
+// -background color fill of the primaryDark color
+//
+//
+// Apart from the types of buttons there are available options
+// to tweak the render of the button or add additional items
+// like for example an icon next to the text:
+// -width:string set the button's width
+// -height:string set the buttons's height
+// -icon?:{} set the buttons icon and its attributes:
+//      {src, alt, width, height, gapToText(optional, default 5px)}
+// -toLowerCase?:boolean - set the default upperCase to lowerCase
+// -lightWeight?:boolean - set the default bold to regular
+
 const ButtonStyled = styled.a<ButtonStyledProps>`
     display: flex;
     align-items: center;

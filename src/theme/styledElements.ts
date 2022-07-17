@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+// space for reusable components mostly related to text elements across the whole app
+
 export const SiteWrapper = styled.div`
     width: 100%;
     max-width: 800px; 

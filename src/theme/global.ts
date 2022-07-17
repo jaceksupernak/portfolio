@@ -13,11 +13,14 @@ const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
     }
     body {
+        // create two background modes to improve mobile performance: 
+        // 1. the mobile view mode uses the gradient and has the colorful eclipses disabled
         background: ${({ theme }) => `linear-gradient(80deg, ${theme.primaryDark} 40%, ${theme.secondaryLight} 350%)`};
+
+        // 2. the tablet view and higher uses primaryDark color and has the colorful eclipses enabled
         @media (min-width: ${({ theme }) => theme.screen.tablet}) {
             background: ${({ theme }) => theme.primaryDark};
         }
-        overflow-x: hidden;
     }
     #root {
         width: 100%;
@@ -25,7 +28,9 @@ const GlobalStyle = createGlobalStyle`
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        // create a gap between site wrapper and the bottom gradient line
         gap: 20px;
+        // disable scrolling for the overflowing eclipses 
         overflow-x: hidden;
     }
 `;

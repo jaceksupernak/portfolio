@@ -52,6 +52,8 @@ export const WavyLineStyled = styled.img`
     }
 `;
 
+// The Big Email button in the Contact is the exception from the size of the regular Button.
+// Therefore it requires extra style wrapping in order to achive smooth responsivness.
 export const ButtonStyleWrapper = styled.div`
     a {
         font-size: 1.2rem;
