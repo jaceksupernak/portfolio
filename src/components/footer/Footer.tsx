@@ -4,6 +4,7 @@ import Link from '../link/Link';
 import {
   FooterStyled, LinksContainerStyled, LinksHeadingStyled,
 } from './Footer.styled';
+import CV from '../../assets/JacekSupernakCV.pdf';
 
 const Footer:React.FC = () => (
   <FooterStyled>
@@ -14,7 +15,7 @@ const Footer:React.FC = () => (
       <Link text="Experience" href="https://www.google.com" />
       <Link text="Projects" href="https://www.google.com" />
       <Link text="Get in touch" href="https://www.google.com" />
-      <Link text="CV" href="https://www.google.com" />
+      <Link text="CV" href={CV} />
     </LinksContainerStyled>
     <LinksContainerStyled>
       <LinksHeadingStyled>contact</LinksHeadingStyled>
