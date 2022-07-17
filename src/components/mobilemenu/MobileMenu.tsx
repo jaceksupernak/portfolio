@@ -9,7 +9,7 @@ const MobileMenu:React.FC = () => {
   return (
     <>
       <Hamburger isOpen={isOpen} onHamburgerClick={onHamburgerClickHandler} />
-      <Menu isOpen={isOpen} />
+      <Menu isOpen={isOpen} onHamburgerClick={onHamburgerClickHandler} />
     </>
   );
 };
