@@ -39,8 +39,8 @@ export const projectsData = [
     technologies: [
       'TypeScript',
       'Styled Components',
-      'HTML5',
       'ReactJS',
+      'HTML5',
       'Git',
       'Netflify',
       'Cloudflare',

@@ -19,9 +19,9 @@ const Footer:React.FC = () => (
     </LinksContainerStyled>
     <LinksContainerStyled>
       <LinksHeadingStyled>contact</LinksHeadingStyled>
-      <Link text="Email" href="https://www.google.com" />
-      <Link text="Linkedin" href="https://www.google.com" />
-      <Link text="Twitter" href="https://www.google.com" />
+      <Link text="Email" href="mailto:jjsupernak@gmail.com" />
+      <Link text="Linkedin" href="https://www.linkedin.com/in/jacek-supernak" />
+      <Link text="Twitter" href="https://twitter.com/jacek_supernak" />
     </LinksContainerStyled>
   </FooterStyled>
 );
