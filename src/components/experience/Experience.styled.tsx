@@ -8,7 +8,7 @@ export const ExperienceContainerStyled = styled.section`
 
 export const ExperienceStyled = styled.article`
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 
     @media (min-width: ${({ theme }) => theme.screen.laptop}) {
@@ -27,7 +27,7 @@ export const ExperienceLogoLaptopViewStyled = styled.img`
 export const ExperienceAboutStyled = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
 `;
 
 export const CompanyContainerStyled = styled.div`
