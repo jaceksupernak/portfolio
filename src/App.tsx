@@ -9,6 +9,7 @@ import Skills from './components/skills/Skills';
 import Experience from './components/experience/Experience';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 import Eclipses from './components/eclipses/Eclipses';
 
 const App:React.FC = () => (
@@ -21,6 +22,7 @@ const App:React.FC = () => (
       <Experience />
       <Projects />
       <Contact />
+      <Footer />
       <Eclipses />
     </SiteWrapper>
   </ThemeProvider>
