@@ -42,7 +42,7 @@ export const ContactTextStyled = styled.span`
 
 export const WavyLineStyled = styled.img`
     position: absolute;
-    bottom: -28%;
+    bottom: -29%;
     right: 50%;
     transform: translateX(50%);
     max-width: 80vw; 

@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         flex-direction: column;
         gap: 20px;
+        overflow-x: hidden;
     }
 `;
 

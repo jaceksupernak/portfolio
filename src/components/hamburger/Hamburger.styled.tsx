@@ -31,7 +31,6 @@ export const HamburgerStyled = styled.button<HamburgerStyledProps>`
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
-  
 
   :first-child {
       transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg)' : 'rotate(0)')};
