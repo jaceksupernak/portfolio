@@ -10,7 +10,7 @@ import {
 } from './Contact.styled';
 
 const Contact:React.FC = () => (
-  <ContactContainerStyled>
+  <ContactContainerStyled id="contact">
 
     <ContactTextStyled>
       Let&apos;s get in touch!

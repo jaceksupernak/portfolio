@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Outfit', sans-serif;
         color: ${({ theme }) => theme.primaryLight};
     }
+    html {
+        scroll-behavior: smooth;
+    }
     body {
         background-color: ${({ theme }) => theme.primaryDark};
         overflow-x: hidden;

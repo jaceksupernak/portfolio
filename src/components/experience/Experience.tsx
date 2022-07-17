@@ -18,7 +18,7 @@ import { experienceData } from '../../data/Data';
 
 const Experience:React.FC = () => (
   <>
-    <SectionHeadingStyled>experience</SectionHeadingStyled>
+    <SectionHeadingStyled id="experience">experience</SectionHeadingStyled>
     <ExperienceContainerStyled>
       {experienceData.map(({
         id, name, role, duration, description, companyLogoBig, companyLogoSmall,

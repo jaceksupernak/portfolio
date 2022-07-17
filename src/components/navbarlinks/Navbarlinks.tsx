@@ -5,9 +5,9 @@ import CV from '../../assets/JacekSupernakCV.pdf';
 
 const NavbarLinks:React.FC = () => (
   <NavbarLinksStyled>
-    <Link text="experience" href="https://www.google.com" />
-    <Link text="projects" href="https://www.google.com" />
-    <Link text="get in touch" href="https://www.google.com" />
+    <Link text="experience" href="#experience" />
+    <Link text="projects" href="#projects" />
+    <Link text="get in touch" href="#contact" />
     <Link text="cv" href={CV} />
   </NavbarLinksStyled>
 );

@@ -16,7 +16,7 @@ const About:React.FC = () => (
       <Button
         type="primary"
         text="open for hire"
-        href="mailto:jjsupernak@gmail.com"
+        href="#contact"
         width="145px"
         height="40px"
         fontSize="0.9rem"

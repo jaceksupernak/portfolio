@@ -11,10 +11,10 @@ const Footer:React.FC = () => (
     <Logo />
     <LinksContainerStyled>
       <LinksHeadingStyled>portfolio</LinksHeadingStyled>
-      <Link text="About" href="https://www.google.com" />
-      <Link text="Experience" href="https://www.google.com" />
-      <Link text="Projects" href="https://www.google.com" />
-      <Link text="Get in touch" href="https://www.google.com" />
+      <Link text="About" href="#start" />
+      <Link text="Experience" href="#experience" />
+      <Link text="Projects" href="#projects" />
+      <Link text="Get in touch" href="#contact" />
       <Link text="CV" href={CV} />
     </LinksContainerStyled>
     <LinksContainerStyled>

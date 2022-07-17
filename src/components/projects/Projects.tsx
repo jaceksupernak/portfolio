@@ -16,7 +16,7 @@ import {
 
 const Projects:React.FC = () => (
   <>
-    <SectionHeadingStyled>projects</SectionHeadingStyled>
+    <SectionHeadingStyled id="projects">projects</SectionHeadingStyled>
     <ProjectsContainerStyled>
       {projectsData.map(({
         id, name, description, liveLink, gitHubLink, technologies, laptopImage, cornerLogo,
