@@ -5,7 +5,6 @@ const ProfilePictureStyled = styled.img`
   height: 200px;
   width: 200px;
 
-
   @media (min-width: ${({ theme }) => theme.screen.tablet}) {
     height: 240px;
     width: 240px;
