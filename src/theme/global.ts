@@ -13,7 +13,10 @@ const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
     }
     body {
-        background-color: ${({ theme }) => theme.primaryDark};
+        background: ${({ theme }) => `linear-gradient(80deg, ${theme.primaryDark} 40%, ${theme.secondaryLight} 350%)`};
+        @media (min-width: ${({ theme }) => theme.screen.tablet}) {
+            background: ${({ theme }) => theme.primaryDark};
+        }
         overflow-x: hidden;
     }
     #root {
