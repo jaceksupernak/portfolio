@@ -37,9 +37,9 @@ export const projectsData = [
     liveLink: '',
     gitHubLink: 'https://github.com/jaceksupernak/portfolio',
     technologies: [
-      'HTML5',
-      'Styled Components',
       'TypeScript',
+      'Styled Components',
+      'HTML5',
       'ReactJS',
       'Git',
       'Netflify',
