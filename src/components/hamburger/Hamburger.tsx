@@ -7,7 +7,7 @@ interface HamburgerProps {
 }
 
 const Hamburger:React.FC<HamburgerProps> = ({ isOpen, onHamburgerClick }) => (
-  <HamburgerStyled isOpen={isOpen} onClick={onHamburgerClick}>
+  <HamburgerStyled isOpen={isOpen} onClick={onHamburgerClick} aria-label="toggle menu button">
     <div />
     <div />
     <div />
