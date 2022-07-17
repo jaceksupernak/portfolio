@@ -43,7 +43,6 @@ export const projectsData = [
       'HTML5',
       'Git',
       'Netflify',
-      'Cloudflare',
       'Figma',
     ],
     laptopImage: projectPersonalWebsite,
@@ -53,7 +52,7 @@ export const projectsData = [
     id: 2,
     name: 'Litetalk',
     description: 'a lightweight messenger app',
-    liveLink: 'https://www.litetalk.herokuapp.com/',
+    liveLink: 'https://litetalk.herokuapp.com/',
     gitHubLink: 'https://github.com/chingu-voyages/v39-bears-team-11',
     technologies: [
       'HTML5',
@@ -75,7 +74,7 @@ export const projectsData = [
     id: 3,
     name: 'Develapp',
     description: 'an app idea aggregator',
-    liveLink: 'https://www.devel-app.herokuapp.com/',
+    liveLink: 'https://devel-app.herokuapp.com/',
     gitHubLink: 'https://github.com/chingu-voyages/v38-geckos-team-04',
     technologies: [
       'HTML5',
