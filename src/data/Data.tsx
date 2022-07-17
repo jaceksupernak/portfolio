@@ -52,7 +52,7 @@ export const projectsData = [
   {
     id: 2,
     name: 'Litetalk',
-    description: 'a lightweight messanger app',
+    description: 'a lightweight messenger app',
     liveLink: 'https://www.litetalk.herokuapp.com/',
     gitHubLink: 'https://github.com/chingu-voyages/v39-bears-team-11',
     technologies: [
