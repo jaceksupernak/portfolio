@@ -11,6 +11,7 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Eclipses from './components/eclipses/Eclipses';
+import BottomLine from './components/bottomline/BottomLine';
 
 const App:React.FC = () => (
   <ThemeProvider theme={theme}>
@@ -25,6 +26,7 @@ const App:React.FC = () => (
       <Footer />
       <Eclipses />
     </SiteWrapper>
+    <BottomLine />
   </ThemeProvider>
 );
 

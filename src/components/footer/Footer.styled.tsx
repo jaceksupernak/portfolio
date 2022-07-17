@@ -1,7 +1,16 @@
 import styled from 'styled-components';
 
-const FooterStyled = styled.footer`
-    
+export const FooterStyled = styled.footer`
+    display: flex;
+    margin-top: 40px;
+    gap: 30px;
 `;
 
-export default FooterStyled;
+export const LinksContainerStyled = styled.footer`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const LinksHeadingStyled = styled.span`
+    margin-bottom: 10px;    
+`;
