@@ -28,8 +28,8 @@ const Experience:React.FC = () => (
           <ExperienceAboutStyled>
             <Heading4Styled>{role}</Heading4Styled>
             <CompanyContainerStyled>
-              <CompanyLogoStyled src={companyLogoSmall} alt={name} width="48px" height="48px" />
               <Heading2Styled>{name}</Heading2Styled>
+              <CompanyLogoStyled src={companyLogoSmall} alt={name} width="48px" height="48px" />
             </CompanyContainerStyled>
             <SpanStyled fontWeight="100" margin="5px 0">{duration}</SpanStyled>
             <ParagraphStyled>{description}</ParagraphStyled>
