@@ -37,18 +37,18 @@ const Projects:React.FC = () => (
             <ButtonsContainerStyled>
               <Button
                 type="primary"
-                text="github link"
+                text="github"
                 href={gitHubLink}
-                width="145px"
+                width="90px"
                 height="40px"
                 fontSize="0.9rem"
               />
               {liveLink ? (
                 <Button
                   type="secondary"
-                  text="live link"
+                  text="live"
                   href={liveLink}
-                  width="145px"
+                  width="90px"
                   height="40px"
                   fontSize="0.9rem"
                 />
