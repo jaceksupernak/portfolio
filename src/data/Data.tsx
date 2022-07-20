@@ -23,7 +23,7 @@ export const experienceData = [
     name: 'Chingu',
     role: 'Front-End Developer',
     duration: 'January 2022 - June 2022',
-    description: 'Participated in three remote open source team projects. Each of the project was built in an international team of three to five developers over a span of seven to nine weeks and was developed using Agile Methodology. The technology included HTML5, (S)CSS, JavaScript ES6, React, Redux, NodeJS, Express, MongoDB.',
+    description: 'Participated in three remote open source team projects. Each of the projects was built in an international team of three to five developers over a span of seven to nine weeks and was developed using Agile Methodology. The technology included HTML5, (S)CSS, JavaScript ES6, React, Redux, NodeJS, Express, MongoDB.',
     companyLogoBig: chinguLogoBig,
     companyLogoSmall: chinguLogoSmall,
   },
