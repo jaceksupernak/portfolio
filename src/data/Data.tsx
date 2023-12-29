@@ -1,5 +1,6 @@
 import chinguLogoBig from '../assets/experience_chingu_big.png';
 import chinguLogoSmall from '../assets/experience_chingu_small.png';
+import teamForwardLogoBig from '../assets/experience_teamforward_big.png';
 import projectPersonalWebsite from '../assets/project_personal_website.png';
 import projectLiteTalk from '../assets/project_litetalk.png';
 import projectDevelapp from '../assets/project_develapp.png';
@@ -7,23 +8,34 @@ import projectGratitulendar from '../assets/project_gratitulendar.png';
 import projectKropkasbox from '../assets/project_kropkasbox.png';
 
 export const skillsData = [
-  'HTML5',
+  'TypeScript',
+  'Javascript ES6',
+  'Tailwind',
+  'NextJS',
+  'ReactJS',
   'S(CSS)',
   'Styled Components',
-  'ReactJS',
-  'Javascript ES6',
-  'TypeScript',
-  'Git',
-  'Agile/Scrum',
+  'NodeJS',
 ];
 
 export const experienceData = [
   {
+    id: 2,
+    name: 'TeamForward',
+    role: 'Front-End Developer',
+    duration: 'November 2023 - present',
+    description:
+      'Working remotely across 3 continents using NextJS, ExpressJS, NodeJS, Tailwind and more. Applied Agile for timely delivery, engaged in pair programming, led Mapbox-integrated location features, designed welcoming user journeys, resolved bugs, and contributed to UI/UX on Miro, enhancing the app robustness and vision.',
+    companyLogoBig: teamForwardLogoBig,
+    companyLogoSmall: teamForwardLogoBig,
+  },
+  {
     id: 1,
     name: 'Chingu',
     role: 'Front-End Developer',
-    duration: 'January 2022 - June 2022',
-    description: 'Participated in three remote open source team projects. Each of the project was built in an international team of three to five developers over a span of seven to nine weeks and was developed using Agile Methodology. The technology included HTML5, (S)CSS, JavaScript ES6, React, Redux, NodeJS, Express, MongoDB.',
+    duration: 'January 2022 - June 2023',
+    description:
+      'Participated in three remote open source team projects. Each of the projects was built in an international team of three to five developers over a span of seven to nine weeks and was developed using Agile Methodology. The technology included HTML5, (S)CSS, JavaScript ES6, React, Redux, NodeJS, Express, MongoDB.',
     companyLogoBig: chinguLogoBig,
     companyLogoSmall: chinguLogoSmall,
   },
@@ -43,7 +55,6 @@ export const projectsData = [
       'HTML5',
       'Git',
       'Netflify',
-      'Cloudflare',
       'Figma',
     ],
     laptopImage: projectPersonalWebsite,
@@ -52,14 +63,15 @@ export const projectsData = [
   {
     id: 2,
     name: 'Litetalk',
-    description: 'a lightweight messanger app',
-    liveLink: 'https://www.litetalk.herokuapp.com/',
+    description: 'a lightweight messenger app',
+    liveLink: 'https://litetalk.herokuapp.com/',
     gitHubLink: 'https://github.com/chingu-voyages/v39-bears-team-11',
     technologies: [
       'HTML5',
       'CSS',
       'JavaScript ES6',
-      'ReactJS', 'NodeJS',
+      'ReactJS',
+      'NodeJS',
       'Redux',
       'Express',
       'MongoDB',
@@ -75,13 +87,14 @@ export const projectsData = [
     id: 3,
     name: 'Develapp',
     description: 'an app idea aggregator',
-    liveLink: 'https://www.devel-app.herokuapp.com/',
+    liveLink: 'https://devel-app.herokuapp.com/',
     gitHubLink: 'https://github.com/chingu-voyages/v38-geckos-team-04',
     technologies: [
       'HTML5',
       'SCSS',
       'JavaScript ES6',
-      'ReactJS', 'NodeJS',
+      'ReactJS',
+      'NodeJS',
       'Express',
       'MongoDB',
       'Agile/Scrum',
