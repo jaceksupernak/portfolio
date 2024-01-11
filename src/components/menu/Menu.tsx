@@ -1,17 +1,19 @@
 import React from 'react';
 import Link from '../link/Link';
 import MenuStyled from './Menu.styled';
+import CV from '../../assets/JacekSupernakCV.pdf';
 
 interface MenuProps {
-    isOpen: boolean;
+  isOpen: boolean;
+  onHamburgerClick: () => void;
 }
 
-const Menu:React.FC<MenuProps> = ({ isOpen }) => (
+const Menu: React.FC<MenuProps> = ({ isOpen, onHamburgerClick }) => (
   <MenuStyled isOpen={isOpen}>
-    <Link text="experience" href="asd" />
-    <Link text="projects" href="asd" />
-    <Link text="get in touch" href="asd" />
-    <Link text="cv" href="asd" />
+    <Link text="experience" href="#experience" onClick={onHamburgerClick} />
+    <Link text="projects" href="#projects" onClick={onHamburgerClick} />
+    <Link text="get in touch" href="#contact" onClick={onHamburgerClick} />
+    <Link text="cv" href={CV} />
   </MenuStyled>
 );
 
