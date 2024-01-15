@@ -108,7 +108,7 @@ export const projectsData = [
     id: 4,
     name: 'Gratitulendar',
     description: 'a gratitude diary',
-    liveLink: 'https://gratitulendar.herokuapp.com/',
+    liveLink: 'https://gratitulendar.netlify.app/',
     gitHubLink: 'https://github.com/chingu-voyages/v37-toucans-team-02',
     technologies: [
       'HTML5',
