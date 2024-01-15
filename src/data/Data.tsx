@@ -1,11 +1,11 @@
-import chinguLogoBig from '../assets/experience_chingu_big.png'
-import chinguLogoSmall from '../assets/experience_chingu_small.png'
-import teamForwardLogoBig from '../assets/experience_teamforward_big.png'
-import projectPersonalWebsite from '../assets/project_personal_website.png'
-import projectLiteTalk from '../assets/project_litetalk.png'
-import projectDevelapp from '../assets/project_develapp.png'
-import projectGratitulendar from '../assets/project_gratitulendar.png'
-import projectKropkasbox from '../assets/project_kropkasbox.png'
+import chinguLogoBig from '../assets/experience_chingu_big.png';
+import chinguLogoSmall from '../assets/experience_chingu_small.png';
+import teamForwardLogoBig from '../assets/experience_teamforward_big.png';
+import projectPersonalWebsite from '../assets/project_personal_website.png';
+import projectLiteTalk from '../assets/project_litetalk.png';
+import projectDevelapp from '../assets/project_develapp.png';
+import projectGratitulendar from '../assets/project_gratitulendar.png';
+import projectKropkasbox from '../assets/project_kropkasbox.png';
 
 export const skillsData = [
   'TypeScript',
@@ -16,7 +16,7 @@ export const skillsData = [
   'S(CSS)',
   'Styled Components',
   'NodeJS',
-]
+];
 
 export const experienceData = [
   {
@@ -39,7 +39,7 @@ export const experienceData = [
     companyLogoBig: chinguLogoBig,
     companyLogoSmall: chinguLogoSmall,
   },
-]
+];
 
 export const projectsData = [
   {
@@ -138,4 +138,4 @@ export const projectsData = [
     laptopImage: projectKropkasbox,
     cornerLogo: '',
   },
-]
+];
