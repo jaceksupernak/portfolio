@@ -87,7 +87,7 @@ export const projectsData = [
     id: 3,
     name: 'Develapp',
     description: 'an app idea aggregator',
-    liveLink: 'https://devel-app.herokuapp.com/',
+    liveLink: 'https://develappchingu.netlify.app/',
     gitHubLink: 'https://github.com/chingu-voyages/v38-geckos-team-04',
     technologies: [
       'HTML5',
