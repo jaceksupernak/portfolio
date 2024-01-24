@@ -23,7 +23,7 @@ export const experienceData = [
     id: 2,
     name: 'TeamForward',
     role: 'Front-End Developer',
-    duration: 'November 2023 - present',
+    duration: 'July 2023 - present',
     description:
       'Working remotely across 3 continents using NextJS, ExpressJS, NodeJS, Tailwind and more. Applied Agile for timely delivery, engaged in pair programming, led Mapbox-integrated location features, designed welcoming user journeys, resolved bugs, and contributed to UI/UX on Miro, enhancing the app robustness and vision.',
     companyLogoBig: teamForwardLogoBig,
